@@ -14,3 +14,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/graph', [NoiseDataController::class, 'showGraph']);
 Route::get('/table', [NoiseDataController::class, 'showTable']);
+Route::get('/displaypage', function () {
+    return view('noise-monitor');
+})->name('single-graph');
