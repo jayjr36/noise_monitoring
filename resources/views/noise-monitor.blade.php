@@ -16,15 +16,15 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Sensor ID</th>
-                        <th>Noise Level</th>
+                        {{-- <th>Sensor ID</th> --}}
+                        <th>Noise Level (dB)</th>
                         <th>Timestamp</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($noiseData as $data)
                         <tr>
-                            <td>{{ $data->sensor_id }}</td>
+                            {{-- <td>{{ $data->sensor_id }}</td> --}}
                             <td>{{ $data->noise_level }}</td>
                             <td>{{ $data->created_at }}</td>
                         </tr>

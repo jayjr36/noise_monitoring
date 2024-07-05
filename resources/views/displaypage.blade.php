@@ -8,14 +8,14 @@
 <body>
 
     <div class="container mt-5">
-        <h1 class="text-center">Noise Level Monitor</h1>
+        <h1 class="text-center">Club Noise Level Monitor</h1>
         <div class="row">
             <div class="col-md-6">
-                <h3>Sensor 1</h3>
+                <h3>Club A</h3>
                 <canvas id="sensor1Chart"></canvas>
             </div>
             <div class="col-md-6">
-                <h3>Sensor 2</h3>
+                <h3>Club B</h3>
                 <canvas id="sensor2Chart"></canvas>
             </div>
         </div>
