@@ -21,7 +21,7 @@ class NoiseDataController extends Controller
     
     public function showTable()
     {
-        $noiseData = NoiseData::orderBy('created_at', 'desc')->take(50)->get();
+        $noiseData = NoiseData::orderBy('created_at', 'desc')->get();
         return view('noise-table', ['noiseData' => $noiseData]);
     }
 
